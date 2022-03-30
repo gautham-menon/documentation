@@ -13,16 +13,16 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&family=Source+Sans+Pro&display=swap">
 <script src="/js/bot.js"></script><title data-react-helmet="true">How are different tickets assigned to agents in Inbox? | yellow.ai</title><meta data-react-helmet="true" property="og:image" content="https://docs.yellow.ai/img/og_img.png"><meta data-react-helmet="true" name="twitter:image" content="https://docs.yellow.ai/img/og_img.png"><meta data-react-helmet="true" name="twitter:image:alt" content="Image for yellow.ai"><meta data-react-helmet="true" name="docsearch:language" content="en"><meta data-react-helmet="true" name="docsearch:version" content="current"><meta data-react-helmet="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-react-helmet="true" name="twitter:card" content="summary"><meta data-react-helmet="true" property="og:title" content="How are different tickets assigned to agents in Inbox? | yellow.ai"><meta data-react-helmet="true" name="description" content="Chat tickets"><meta data-react-helmet="true" property="og:description" content="Chat tickets"><meta data-react-helmet="true" property="og:url" content="https://docs.yellow.ai/docs/platform_concepts/inbox/tickets-assignment-logic"><link data-react-helmet="true" rel="shortcut icon" href="/img/favicon.png"><link data-react-helmet="true" rel="preconnect" href="https://LWOORM11IH-dsn.algolia.net" crossorigin="anonymous"><link data-react-helmet="true" rel="canonical" href="https://docs.yellow.ai/docs/platform_concepts/inbox/tickets-assignment-logic"><link rel="stylesheet" href="/styles.c9769944.css">
-<link rel="preload" href="/styles.2bd97646.js" as="script">
-<link rel="preload" href="/runtime~main.1e69988b.js" as="script">
-<link rel="preload" href="/main.fcdf8ee8.js" as="script">
-<link rel="preload" href="/1.773266ed.js" as="script">
-<link rel="preload" href="/2.6237e349.js" as="script">
-<link rel="preload" href="/ce4f41a9.d15ecd0c.js" as="script">
-<link rel="preload" href="/250.27bc9c93.js" as="script">
-<link rel="preload" href="/935f2afb.8057d206.js" as="script">
-<link rel="preload" href="/17896441.5b4dca45.js" as="script">
-<link rel="preload" href="/d43f00f0.b36330af.js" as="script">
+<link rel="preload" href="/styles.66e16466.js" as="script">
+<link rel="preload" href="/runtime~main.d94e5c4d.js" as="script">
+<link rel="preload" href="/main.30e126e0.js" as="script">
+<link rel="preload" href="/1.e829881d.js" as="script">
+<link rel="preload" href="/2.0cb2e389.js" as="script">
+<link rel="preload" href="/ce4f41a9.8447635c.js" as="script">
+<link rel="preload" href="/251.4316f8ce.js" as="script">
+<link rel="preload" href="/935f2afb.e5791524.js" as="script">
+<link rel="preload" href="/17896441.ce0258a8.js" as="script">
+<link rel="preload" href="/d43f00f0.5e4b5c03.js" as="script">
 </head>
 <body>
 <script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){var t=null;try{t=localStorage.getItem("theme")}catch(t){}return t}();t(null!==e?e:"light")}()</script><div id="__docusaurus">
@@ -40,15 +40,15 @@ Each agent will have an upper limit for chats called Concurrency which explains 
 </span></div><div class="token-line" style="color:#393A34"><span class="token plain">Agent E</span></div></div></div><button type="button" aria-label="Copy code to clipboard" class="copyButton_2GIj">Copy</button></div></div><p>Then, they’ll be rearranged on the basis of descending order of the last ticket assigned time,</p><div class="mdxCodeBlock_1zKU"><div class="codeBlockContent_actS"><div tabindex="0" class="prism-code language-undefined codeBlock_tuNs thin-scrollbar"><div class="codeBlockLines_3uvA" style="color:#393A34;background-color:#f6f8fa"><div class="token-line" style="color:#393A34"><span class="token plain">Agent C = Last ticket assigned was 30 mins before &amp; Concurrency - 3/6</span></div><div class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block">
 </span></div><div class="token-line" style="color:#393A34"><span class="token plain">Agent A = Last ticket assigned was 15 mins before &amp; Concurrency - 4/6</span></div><div class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block">
 </span></div><div class="token-line" style="color:#393A34"><span class="token plain">Agent E = Last ticket assigned was 10 mins before &amp; Concurrency - 6/6</span></div></div></div><button type="button" aria-label="Copy code to clipboard" class="copyButton_2GIj">Copy</button></div></div><p>Now the chat ticket will be assigned to <strong>Agent C</strong>, since <strong>C</strong> is the first agent that has gone the longest without a new ticket assigned to them &amp; has space in their concurrency [3 more left to their max concurrency which is 6].</p></div></article><div class="margin-vert--lg"><nav class="pagination-nav" aria-label="Blog list page navigation"><div class="pagination-nav__item"><a class="pagination-nav__link" href="/docs/platform_concepts/inbox/manage-support-agent"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">« Manage Support Agents</div></a></div><div class="pagination-nav__item pagination-nav__item--next"><a class="pagination-nav__link" href="/docs/platform_concepts/inbox/default-agent-statuses"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Default Agent Statuses »</div></a></div></nav></div></div></div><div class="col col--3"><div class="tableOfContents_2xL- thin-scrollbar"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#chat-tickets" class="table-of-contents__link">Chat tickets</a></li></ul></div></div></div></div></main></div></div><footer class="footer"><div class="container"><div class="footer__bottom text--center"></div></div></footer></div>
-<script src="/styles.2bd97646.js"></script>
-<script src="/runtime~main.1e69988b.js"></script>
-<script src="/main.fcdf8ee8.js"></script>
-<script src="/1.773266ed.js"></script>
-<script src="/2.6237e349.js"></script>
-<script src="/ce4f41a9.d15ecd0c.js"></script>
-<script src="/250.27bc9c93.js"></script>
-<script src="/935f2afb.8057d206.js"></script>
-<script src="/17896441.5b4dca45.js"></script>
-<script src="/d43f00f0.b36330af.js"></script>
+<script src="/styles.66e16466.js"></script>
+<script src="/runtime~main.d94e5c4d.js"></script>
+<script src="/main.30e126e0.js"></script>
+<script src="/1.e829881d.js"></script>
+<script src="/2.0cb2e389.js"></script>
+<script src="/ce4f41a9.8447635c.js"></script>
+<script src="/251.4316f8ce.js"></script>
+<script src="/935f2afb.e5791524.js"></script>
+<script src="/17896441.ce0258a8.js"></script>
+<script src="/d43f00f0.5e4b5c03.js"></script>
 </body>
 </html>
