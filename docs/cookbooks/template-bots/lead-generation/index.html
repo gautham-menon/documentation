@@ -12,17 +12,17 @@
 <link rel="search" type="application/opensearchdescription+xml" title="yellow.ai" href="/opensearch.xml">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&family=Source+Sans+Pro&display=swap">
-<script src="/js/bot.js"></script><title data-react-helmet="true">Lead Generation Bot | yellow.ai</title><meta data-react-helmet="true" property="og:image" content="https://docs.yellow.ai/img/og_img.png"><meta data-react-helmet="true" name="twitter:image" content="https://docs.yellow.ai/img/og_img.png"><meta data-react-helmet="true" name="twitter:image:alt" content="Image for yellow.ai"><meta data-react-helmet="true" name="docsearch:language" content="en"><meta data-react-helmet="true" name="docsearch:version" content="current"><meta data-react-helmet="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-react-helmet="true" name="twitter:card" content="summary"><meta data-react-helmet="true" property="og:title" content="Lead Generation Bot | yellow.ai"><meta data-react-helmet="true" name="description" content="Create Lead Generation Bot"><meta data-react-helmet="true" property="og:description" content="Create Lead Generation Bot"><meta data-react-helmet="true" property="og:url" content="https://docs.yellow.ai/docs/cookbooks/template-bots/lead-generation"><link data-react-helmet="true" rel="shortcut icon" href="/img/favicon.png"><link data-react-helmet="true" rel="preconnect" href="https://LWOORM11IH-dsn.algolia.net" crossorigin="anonymous"><link data-react-helmet="true" rel="canonical" href="https://docs.yellow.ai/docs/cookbooks/template-bots/lead-generation"><link rel="stylesheet" href="/styles.97e4b948.css">
-<link rel="preload" href="/styles.e8e24e61.js" as="script">
-<link rel="preload" href="/runtime~main.0612e4e6.js" as="script">
-<link rel="preload" href="/main.a610dbc5.js" as="script">
-<link rel="preload" href="/1.20369159.js" as="script">
-<link rel="preload" href="/2.65fe4ecf.js" as="script">
-<link rel="preload" href="/b8f4b6e5.e654d254.js" as="script">
-<link rel="preload" href="/267.a4299ce5.js" as="script">
-<link rel="preload" href="/935f2afb.32014869.js" as="script">
-<link rel="preload" href="/17896441.460a226f.js" as="script">
-<link rel="preload" href="/5a9960ab.d11ce08f.js" as="script">
+<script src="/js/bot.js"></script><title data-react-helmet="true">Lead Generation Bot | yellow.ai</title><meta data-react-helmet="true" property="og:image" content="https://docs.yellow.ai/img/og_img.png"><meta data-react-helmet="true" name="twitter:image" content="https://docs.yellow.ai/img/og_img.png"><meta data-react-helmet="true" name="twitter:image:alt" content="Image for yellow.ai"><meta data-react-helmet="true" name="docsearch:language" content="en"><meta data-react-helmet="true" name="docsearch:version" content="current"><meta data-react-helmet="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-react-helmet="true" name="twitter:card" content="summary"><meta data-react-helmet="true" property="og:title" content="Lead Generation Bot | yellow.ai"><meta data-react-helmet="true" name="description" content="Create Lead Generation Bot"><meta data-react-helmet="true" property="og:description" content="Create Lead Generation Bot"><meta data-react-helmet="true" property="og:url" content="https://docs.yellow.ai/docs/cookbooks/template-bots/lead-generation"><link data-react-helmet="true" rel="shortcut icon" href="/img/favicon.png"><link data-react-helmet="true" rel="preconnect" href="https://LWOORM11IH-dsn.algolia.net" crossorigin="anonymous"><link data-react-helmet="true" rel="canonical" href="https://docs.yellow.ai/docs/cookbooks/template-bots/lead-generation"><link rel="stylesheet" href="/styles.c9769944.css">
+<link rel="preload" href="/styles.33d40de1.js" as="script">
+<link rel="preload" href="/runtime~main.4deab248.js" as="script">
+<link rel="preload" href="/main.62d9c7e9.js" as="script">
+<link rel="preload" href="/1.5b61c01f.js" as="script">
+<link rel="preload" href="/2.03e0c243.js" as="script">
+<link rel="preload" href="/ce4f41a9.d2f74c0f.js" as="script">
+<link rel="preload" href="/268.b1929628.js" as="script">
+<link rel="preload" href="/935f2afb.9a6594fd.js" as="script">
+<link rel="preload" href="/17896441.da6b4ce2.js" as="script">
+<link rel="preload" href="/5a9960ab.55da51f1.js" as="script">
 </head>
 <body>
 <script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){var t=null;try{t=localStorage.getItem("theme")}catch(t){}return t}();t(null!==e?e:"light")}()</script><div id="__docusaurus">
@@ -32,15 +32,15 @@ In Studio, click on <code>Create Journey</code> button on the bottom left corner
 In the popup, in the <code>Template</code> field select <code>Forms</code>. Also, add rest of the details.
 <img src="https://i.imgur.com/Ko2A98A.png"></li></ol><p>In the <code>Select steps for forms journey</code> add all fields as per requirement.
 Click on <code>Create Journey</code> now.</p><ol start="2"><li>Connect it with <code>Welcome Prompt</code>.</li></ol><p>We want users to engage with this journey when they first interact with the bot. Best way to do this including it in the <code>Welcome Promt</code>. Go to <code>Studio</code> click on the home and select <code>Welcome Prompt</code>. You should see a <code>Text Message</code> response already there.</p><p>Let&#x27;s add a <a href="/docs/platform_concepts/studio/steps/prompts-and-messages#quick-replies">Quick Reply</a> message by clicking on <code>Click here to add new response</code>. Enter a text message here and buttons you want to show users as options</p><p><img src="https://i.imgur.com/DByc6iN.png"></p><ol start="3"><li>Store information in the database</li></ol><p>First go through the <a href="https://docs.yellow.ai/docs/platform_concepts/data/create-tables" target="_blank" rel="noopener noreferrer"><strong>data module</strong></a> to understand how a database is created and values are added to the respective columns of the database.</p><p>Then use a <a href="https://docs.yellow.ai/docs/platform_concepts/studio/steps/action-nodes-and-logic#database" target="_blank" rel="noopener noreferrer"><strong>database action node</strong></a> to insert the user information in the database table that you have create in the data module.</p><p><img src="https://i.imgur.com/ReJ0gxz.png"></p><p><img src="https://i.imgur.com/ftgzRjM.png"></p><ol start="4"><li>Try your bot</li></ol><p>Now you can interact with your bot. If everything works just fine, after completing the journeys, you should see the user data in the database.</p></div></article><div class="margin-vert--lg"><nav class="pagination-nav" aria-label="Blog list page navigation"><div class="pagination-nav__item"><a class="pagination-nav__link" href="/docs/cookbooks/template-bots/faq"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">« FAQ Bot</div></a></div><div class="pagination-nav__item pagination-nav__item--next"><a class="pagination-nav__link" href="/docs/cookbooks/whatsapp cookbook/whatsapp-bot"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">WhatsApp Channel Setup »</div></a></div></nav></div></div></div><div class="col col--3"><div class="tableOfContents_2xL- thin-scrollbar"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#create-lead-generation-bot" class="table-of-contents__link">Create Lead Generation Bot</a><ul><li><a href="#step-1-create-a-journey" class="table-of-contents__link"><code>Step 1:</code> Create a Journey</a></li><li><a href="#step-2-add-user-expressions" class="table-of-contents__link"><code>Step 2:</code> Add User Expressions</a></li><li><a href="#step-3-adding-of-responses" class="table-of-contents__link"><code>Step 3:</code> Adding of Responses</a></li><li><a href="#step-4-contextual-questionresponse" class="table-of-contents__link"><code>Step 4:</code> Contextual Question/Response</a></li><li><a href="#step-5-quick-reply-input" class="table-of-contents__link"><code>Step 5:</code> Quick Reply Input</a></li><li><a href="#step-6-train-and-try-your-bot" class="table-of-contents__link"><code>Step 6:</code> Train and Try your Bot</a></li></ul></li><li><a href="#create-lead-generation-bot-using-form-journey" class="table-of-contents__link">Create Lead Generation Bot using Form Journey</a></li></ul></div></div></div></div></main></div></div><footer class="footer"><div class="container"><div class="footer__bottom text--center"></div></div></footer></div>
-<script src="/styles.e8e24e61.js"></script>
-<script src="/runtime~main.0612e4e6.js"></script>
-<script src="/main.a610dbc5.js"></script>
-<script src="/1.20369159.js"></script>
-<script src="/2.65fe4ecf.js"></script>
-<script src="/b8f4b6e5.e654d254.js"></script>
-<script src="/267.a4299ce5.js"></script>
-<script src="/935f2afb.32014869.js"></script>
-<script src="/17896441.460a226f.js"></script>
-<script src="/5a9960ab.d11ce08f.js"></script>
+<script src="/styles.33d40de1.js"></script>
+<script src="/runtime~main.4deab248.js"></script>
+<script src="/main.62d9c7e9.js"></script>
+<script src="/1.5b61c01f.js"></script>
+<script src="/2.03e0c243.js"></script>
+<script src="/ce4f41a9.d2f74c0f.js"></script>
+<script src="/268.b1929628.js"></script>
+<script src="/935f2afb.9a6594fd.js"></script>
+<script src="/17896441.da6b4ce2.js"></script>
+<script src="/5a9960ab.55da51f1.js"></script>
 </body>
 </html>
